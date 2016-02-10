@@ -1,0 +1,85 @@
+/* Standart tegs*/
+body
+{
+    margin: 0;
+}
+
+p
+{
+    margin: 18px 0 18px 0;
+    line-height: 25px;
+    font-size: 18px;
+}
+/* End of standart tegs*/
+
+/* Divs*/
+.main
+{
+    border-top: 1px rgb(216,216,216) solid;
+    border-bottom: 3px black solid;
+    background-color: rgb(216,216,216);
+    width: 1440px;
+    height: 805px;
+    border-radius: 0 0 10px 10px;
+}
+
+.content
+{
+    margin: 5px 460px 36px 460px;
+    width: 520px;
+    height: 750px;
+    background-color: white;
+    border: 1px black solid;
+}
+
+.sections
+{
+    border-bottom: 1px black solid;
+    margin: 0 50px 0 50px;
+}
+
+.section1
+{
+    text-align: center;
+}
+
+.fio
+{
+    font: bold 20px/30px Times New Roman;
+    margin: 50px 0 3px 0;
+}
+
+.photo
+{
+    margin: 0 135px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background-image: url("../img/html_01.jpg");
+    background-size: cover;
+}
+
+.txt
+{
+    text-align: left;
+    margin-left: 15px;
+}
+
+.feedback
+{
+    margin: 0 50px 0 50px;
+}
+
+/* End of divs*/
+
+/* Element of lists*/
+.wishes li
+{
+  line-height: 25px;
+}
+
+.wishes ul
+{
+  padding: 0 0 0 20px;
+}
+/* End of element of lists*/
