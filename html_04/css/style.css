@@ -9,8 +9,6 @@ header, .container, footer {
 }
 
 .shadow {
-  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
   box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
 }
 
@@ -27,12 +25,12 @@ body {
   background-image: url('../img/background.png');
 }
 
-/* Header*/
 a {
   text-decoration: none;
   color: #fff;
 }
 
+/* Header*/
 header {
   margin-top: 38px;
   height: 442px;
@@ -67,7 +65,7 @@ header {
 
 .countries {
   width: 330px;
-  height: 55px;
+  height: 64px;
   float: right;
   margin-top: 33px;
   margin-right: 40px;
@@ -79,14 +77,7 @@ header {
   text-align: center;
   float: left;
   width: 16.6%;
-}
-
-.images li {
-  height: 42px;
-}
-
-.links li {
-  line-height: 12px;
+  height: 52px;
 }
 
 .countries a {
@@ -105,11 +96,10 @@ header {
 nav {
   border-top: 1px solid #cacbcb;
   border-bottom: 1px solid #000;
-  background-image: url('../img/white_triangles.png');
 }
 
 nav ul {
-  background: -webkit-linear-gradient(top, #373737, #303030);
+  background: linear-gradient(to top, #303030, #373737);
 }
 
 nav li{
@@ -165,30 +155,28 @@ h1 {
 }
 
 
-.info {
+.columns {
   width: 21%;
-  height: 100%;
-  float: left;
+  margin-bottom: -5000px;
+  padding-bottom: 5000px;
   font-size: 14px;
   border-right: 1px solid #c7cacf;
   border-left: 1px solid #c7cacf;
   background-color: #edeef0;
 }
 
-.news {
-  width: 21%;
-  height: 100%;
-  float: right;
-  font-size: 14px;
-  border-right: 1px solid #c7cacf;
-  border-left: 1px solid #c7cacf;
-  background-color: #edeef0;
-}
-
-.info p, .news p {
+.columns p {
   padding-left: 15px;
   padding-right: 24px;
   color: #424c43;
+}
+
+.column_left {
+  float: left;
+}
+
+.column_right {
+  float: right;
 }
 
 /* Footer*/
@@ -197,5 +185,4 @@ footer {
   height: 25px;
   text-align: center;
   color: #dee7ee;
-  font-size: 12px;
 }
