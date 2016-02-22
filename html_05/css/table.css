@@ -1,0 +1,26 @@
+table {
+  empty-cells: show;
+  border-collapse: collapse;
+  border: 11px solid #fff;
+}
+
+table td {
+  border: 10px solid #000;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.black {
+  background-color: black;
+  opacity: 0.95;
+}
