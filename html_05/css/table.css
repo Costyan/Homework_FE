@@ -4,23 +4,53 @@ table {
   border: 11px solid #fff;
 }
 
+col {
+  width: 50px;
+}
+
 table td {
   border: 10px solid #000;
 }
 
+.c1 {
+  width: 100px;
+}
+
+.tr1 {
+  height: 47px;
+}
+
+.tr2 {
+  height: 127px;
+}
+.tr3 {
+  height: 129px;
+}
+.tr4 {
+  height: 60px;
+}
+.tr5 {
+  height: 57px;
+}
+.tr6 {
+  height: 29px;
+}
+.tr7 {
+  height: 31px;
+}
+
 .yellow {
-  background-color: yellow;
+  background-color: #ffed5a;
 }
 
 .red {
-  background-color: red;
+  background-color: #ff632e;
 }
 
 .blue {
-  background-color: blue;
+  background-color: #04437f;
 }
 
 .black {
-  background-color: black;
-  opacity: 0.95;
+  background-color: #36453f;
 }
