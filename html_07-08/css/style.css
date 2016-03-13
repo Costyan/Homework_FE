@@ -167,6 +167,7 @@ header {
   height: 434px;
   margin-right: 70px;
   float: right;
+  background-image: url("../img/iphones.png");
 }
 
 .arrow_left {
@@ -223,7 +224,6 @@ header {
   height: 31px;
   margin-top: 9px;
   float: left;
-  transition: 0.2s;
 }
 
 .about--1 {
@@ -344,8 +344,11 @@ header {
 }
 
 .content_body__txt__headline {
+  width: 208px;
+  height: 23px;
   margin-top: 32px;
   margin-left: 39px;
+  background-image: url("../img/content_body__txt_headline.png");
 }
 
 .content_body__txt__text {
@@ -806,12 +809,11 @@ footer {
   }
 
   .content_body__txt__headline {
+    width: 86px;
+    height: 43px;
     margin-top: 31px;
     margin-left: 38px;
-  }
-
-  .content_body__txt__headline img {
-    content: url("../img/content_body__txt_headline_768.png");
+    background-image: url("../img/content_body__txt_headline_768.png");
   }
 
   .content_body__txt__text {
@@ -1100,11 +1102,8 @@ footer {
     margin-right: 0;
     float: left;
     overflow: hidden;
+    background-image: url("../img/iphones_480.png");
 
-  }
-
-  .iphones img {
-    content: url("../img/iphones_480.png");
   }
 
   .arrows {
@@ -1172,11 +1171,10 @@ footer {
   }
 
   .content_body__txt__headline {
+    width: 208px;
+    height: 23px;
     margin-top: 29px;
-  }
-
-  .content_body__txt__headline img {
-    content: url("../img/content_body__txt_headline.png");
+    background-image: url("../img/content_body__txt_headline.png");
   }
 
   .content_body__txt__text {
@@ -1420,12 +1418,11 @@ footer {
   }
 
   .content_body__txt__headline {
+    width: 86px;
+    height: 43px;
     margin-top: 26px;
     margin-left: 34px;
-  }
-
-  .content_body__txt__headline img {
-    content:  url("../img/content_body__txt_headline_768.png");
+    background-image: url("../img/content_body__txt_headline_768.png");
   }
 
   .content_body__txt__text {
