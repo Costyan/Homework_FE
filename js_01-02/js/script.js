@@ -28,7 +28,7 @@ if(y < 0) {
   }
 
 var names = [];
-for(var i = 0; i <= 2; i++) {
+for(var i = 0; i <= 4; i++) {
   names[i] = prompt('Введите имя');
 }
 
