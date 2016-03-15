@@ -16,11 +16,11 @@ var constructorTest = {
         var li = document.createElement('li');
         li.classList.add('li--');
         var label = document.createElement('label');
-        label.setAttribute('for', 'answer'+key);
+        label.setAttribute('for', 'question'+(i+1)+'answer'+(+key+1));
         var checkBox = document.createElement('input');
         checkBox.setAttribute('type', 'radio')
-        checkBox.setAttribute('name', 'question'+i);
-        checkBox.setAttribute('id','answer'+key);
+        checkBox.setAttribute('name', 'question'+(i+1));
+        checkBox.setAttribute('id','question'+(i+1)+'answer'+(+key+1));
         label.appendChild(checkBox);
         var oldHTML = label.innerHTML;
         label.innerHTML = oldHTML + questions[questionKey][key];
