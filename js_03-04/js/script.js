@@ -18,7 +18,7 @@ var constructorTest = {
         var label = document.createElement('label');
         label.setAttribute('for', 'question'+(i+1)+'answer'+(+key+1));
         var checkBox = document.createElement('input');
-        checkBox.setAttribute('type', 'radio')
+        checkBox.setAttribute('type', 'checkbox');
         checkBox.setAttribute('name', 'question'+(i+1));
         checkBox.setAttribute('id','question'+(i+1)+'answer'+(+key+1));
         label.appendChild(checkBox);
