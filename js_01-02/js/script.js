@@ -7,12 +7,8 @@ function powViaCycle(x, y) {
 }
 
 function powViaRecursion (x, y) {
-  var result = 1;
-  if(y == 1) {
-    return x;
-  } else {
-    return x * powViaRecursion(x, y-1);
-  }
+  if(y == 1) return x;
+  return x * powViaRecursion(x, y-1);
 }
 
 var x = +prompt('Введите число');
@@ -31,15 +27,11 @@ var names = [];
 for(var i = 0; i <= 4; i++) {
   names[i] = prompt('Введите имя');
 }
-
 var curName = prompt('Введите имя пользователя');
+var result = 'Такого пользователя нет!';
 for(var key in names) {
   if(names[key] == curName) {
-    var result = names[key]+' , вы успешно вошли!';
+    result = names[key]+' , вы успешно вошли!';
   }
 }
-if(result === undefined) {
-  alert('Такого пользователя нет!');
-} else {
-  alert(result);
-}
+alert(result);
