@@ -1,26 +1,27 @@
-var Timer = (function() {
-  var timer = null;
-  var startTime = 0;
-  var curTime = 0;
-  var prevTime = 0;
-  var outputTime = 0;
+function Timer() {
+  var self = this;
+  self.timer = null;
+  self.startTime = 0;
+  self.curTime = 0;
+  self.prevTime = 0;
+  self.outputTime = 0;
 
-  function getTimerValue() {
-    return outputTime;
+  self.getTimerValue = function() {
+    return self.outputTime;
   }
 
-  function getMyTime() {
+  self.getMyTime = function() {
     var tmpTime = new Date();
     return tmpTime.getTime();
   }
 
-  function process() {
-    curTime = getMyTime();
-    outputTimer();
+  self.process = function() {
+    self.curTime = self.getMyTime();
+    self.outputTimer();
   }
 
-  function outputTimer() {
-    var outT = prevTime + curTime - startTime;
+  self.outputTimer = function() {
+    var outT = self.prevTime + self.curTime - self.startTime;
     milliseconds = outT % 1000;
     outT = (outT / 1000) >> 0;
     seconds = outT % 60;
@@ -28,34 +29,34 @@ var Timer = (function() {
     minutes = outT % 60;
     outT = (outT / 60) >> 0;
     hours = outT % 24;
-    outputTime = '' + ((hours / 10) >> 0) + (hours % 10) + ':' +
+    self.outputTime = '' + ((hours / 10) >> 0) + (hours % 10) + ':' +
                       ((minutes / 10) >> 0) + (minutes % 10) + ':' +
                       ((seconds / 10) >> 0) + (seconds % 10) + '.' +
                       ((milliseconds / 100) >> 0) + ((milliseconds % 100 / 10) >> 0) + (milliseconds % 10);
   }
 
-  function start() {
-    startTime = getMyTime();
-    timer = setInterval(process, 7);
+  self.start = function() {
+    self.startTime = self.getMyTime();
+    self.timer = setInterval(self.process, 7);
   }
 
-  function clear() {
-    clearInterval(timer);
-    startTime = 0;
-    curTime = 0;
-    prevTime = 0;
-    outputTime = '00:00:00.000';
+  self.clear = function() {
+    clearInterval(self.timer);
+    self.startTime = 0;
+    self.curTime = 0;
+    self.prevTime = 0;
+    self.outputTime = '00:00:00.000';
   }
 
-  function pause() {
-    clearInterval(timer);
-    prevTime = prevTime + curTime - startTime;
+  self.pause = function() {
+    clearInterval(self.timer);
+    self.prevTime = self.prevTime + self.curTime - self.startTime;
   }
 
   return {
-    getTimerValue: getTimerValue,
-    start: start,
-    clear: clear,
-    pause: pause
+    getTimerValue: self.getTimerValue,
+    start: self.start,
+    clear: self.clear,
+    pause: self.pause
   }
-}) ();
+}
