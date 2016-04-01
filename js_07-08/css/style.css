@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  padding: 0 5px;
+}
+
+p {
+  text-indent: 10px;
+}
+
+.wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.my-tabs {
+  width: 940px;
+  height: 500px;
+  margin-right: 20px;
+  float: left;
+  background-color: #eee;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+
+.headline {
+  text-align: center;
+}
+
+.tabs {
+  position: relative;
+}
+
+.tab {
+  margin: 0 5px;
+  display: inline-block;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 3px 3px 0 0;
+  box-sizing: border-box;
+}
+
+.tab a {
+  color: #000;
+  text-decoration: none;
+}
+
+.a-active:hover {
+  cursor: default;
+}
+
+.sub-tab {
+  position: absolute;
+  top: 23px;
+  left: 5px;
+  width: 927px;
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 0 3px 3px 3px;
+  box-sizing: border-box;
+}
+
+.active {
+  display: block;
+}
+
+.inactive {
+  display: none;
+}
+
+.my-form {
+  width: 940px;
+  height: 500px;
+  float: left;
+  border: 2px solid #000;
+  box-sizing: border-box;
+}
+
+.field {
+  margin-bottom: 5px;
+}
+
+.field-name {
+  width: 70px;
+  float: left;
+  display: block;
+}
+
+.show-help {
+  color: #f00;
+  transition: 2s;
+}
+
+.show-all-helps--hide {
+  color: #fff;
+}
+
+.show-all-helps--show {
+  color: #aaa;
+}
