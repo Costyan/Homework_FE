@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>js 09-10</title>
+  <link rel="stylesheet" href="http://sorgalla.com/jcarousel/assets/style.css">
+  <link rel="stylesheet" href="css/cusel.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js"></script>
+  <script src="js/cusel.js"></script>
+  <script src="js/cusel-min-2.5.js"></script>
+  <script src="js/jScrollPane.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+  <h3>Carousel</h3>
+  <div class="jcarousel-wrapper">
+    <div class="jcarousel">
+      <div class="jcarousel-list-element">
+        <div class="jcarousel-item-element"><img src="img/thrall.png" alt="Thrall"></div>
+        <div class="jcarousel-item-element"><img src="img/stitches.jpg" alt="Stitches"></div>
+        <div class="jcarousel-item-element"><img src="img/zagara.png" alt="Zagara"></div>
+        <div class="jcarousel-item-element"><img src="img/diablo.jpg" alt="Diablo"></div>
+      </div>
+    </div>
+    <a href="#" class="jcarousel-control-prev btn-navigation" data-jcarouselcontrol="true">&lt;</a>
+    <a href="#" class="jcarousel-control-next btn-navigation" data-jcarouselcontrol="true">></a>
+  </div>
+  <h3>Custom selects</h3>
+  <div class="select-wrapper">
+    <select id="adv-select" class="advanced-select">
+      <option value="1">Stitches</option>
+      <option value="1">Thrall</option>
+      <option value="1">Zagara</option>
+      <option value="1">Diablo</option>
+    </select>
+  </div>
+  <h3>Checkboxes</h3>
+  <div class="checkbox-wrapper">
+    <div class="checkboxes-jquery">
+      <h5>Checkboxes via JQuery</h5>
+      <div class="jquery-checkbox">
+        <input type="checkbox" name="chb">
+      </div>
+      <div class="jquery-checkbox">
+        <input type="checkbox" name="chb" checked>
+      </div>
+    </div>
+    <div class="checkboxes-css">
+      <h5>Checkboxes via CSS</h5>
+      <div>
+        <input type="checkbox" class="css-checkbox" id="test-check1">
+        <label for="test-check1">Checkbox 1:</label>
+      </div>
+      <div>
+        <input type="checkbox" class="css-checkbox" id="test-check2">
+        <label for="test-check2">Checkbox 2:</label>
+      </div>
+    </div>
+  </div>
+  <h3>Drop-dowm menu</h3>
+  <div class="dropdown-menu-wrapper">
+    <ul class="menu">
+      <li><a href="#">Nav 1</a></li>
+      <li><a href="#">Nav 2</a></li>
+      <li class="dropdown"><a href="#">Nav 3</a>
+        <ul class="submenu">
+          <li><a href="#">Nav 3.1</a></li>
+          <li><a href="#">Nav 3.2</a></li>
+          <li><a href="#">Nav 3.3</a></li>
+          <li class="dropdown"><a href="#">Nav 3.4</a>
+            <ul class="submenu">
+              <li><a href="#">Nav 3.4.1</a></li>
+              <li class="dropdown"><a href="#">Nav 3.4.2</a>
+                <ul class="submenu">
+                  <li><a href="#">Nav 3.4.2.1</a></li>
+                  <li><a href="#">Nav 3.4.2.2</a></li>
+                  <li><a href="#">Nav 3.4.2.3</a></li>
+                  <li><a href="#">Nav 3.4.2.4</a></li>
+                  <li><a href="#">Nav 3.4.2.5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Nav 3.4.3</a></li>
+              <li><a href="#">Nav 3.4.4</a></li>
+              <li><a href="#">Nav 3.4.5</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Nav 3.5</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Nav 4</a></li>
+      <li><a href="#">Nav 5</a></li>
+    </ul>
+  </div>
+</body>
+</html>

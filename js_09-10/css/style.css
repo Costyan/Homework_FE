@@ -1,0 +1,167 @@
+h3 {
+  text-align: center;
+}
+
+h5 {
+  color: #0388A6;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*///////////////// Carousel /////////////////////////////////////////////////*/
+.jcarousel-wrapper {
+  width: 960px;
+  height: 720px;
+  margin: 0 auto;
+}
+
+.btn-navigation {
+  font: 24px/28px Tahoma, sans-serif;
+}
+
+.jcarousel {
+  width: 960px;
+  height: 720px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.jcarousel-list-element {
+  width: 20000em;
+  position: relative;
+}
+
+.jcarousel-item-element {
+  float: left;
+}
+
+/*///////////////// Select ///////////////////////////////////////////////////*/
+.select-wrapper{
+  width: 100px;
+  margin: 0 auto;
+}
+
+.advanced-select {
+  width: 100px;
+  margin: 0 auto;
+  outline: none;
+}
+
+/*///////////////// Checkboxes ///////////////////////////////////////////////*/
+.checkbox-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.jquery-checkbox {
+  width: 17px;
+  height: 17px;
+  margin: 0 auto;
+  cursor: pointer;
+  background: url(../img/checkbox-sprite-js.png);
+}
+
+.jquery-checkbox input{
+  display: none;
+}
+
+.css-checkbox {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+label:after {
+  content: " ";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  background: url(../img/checkbox-sprite-css.png);
+  position: relative;
+  top: 3px;
+  margin-left: 15px;
+}
+
+.css-checkbox:checked + label:after {
+background-position: 0 -17px;
+}
+
+label:hover:after {
+background-position: 0 -34px;
+}
+
+.css-checkbox:checked + label:hover:after {
+background-position: 0 -51px;
+}
+
+/*///////////////// DropDowm menu ////////////////////////////////////////////*/
+.dropdown-menu-wrapper {
+  height: 300px;
+  text-align: center;
+}
+
+.menu {
+  background-color: rgb(255,100,100);
+}
+
+.menu a {
+  color: #fff;
+  padding: 0 20px 0 19px;
+}
+
+.menu a:hover{
+  color: #000;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li.dropdown > a {
+  background-image: url(http://callmenick.com/_development/slide-down-menu/img/arrow-down.png);
+  background-position:right 7px;
+  background-repeat: no-repeat;
+}
+.menu li li.dropdown > a {
+  background-image: url(http://callmenick.com/_development/slide-down-menu/img/arrow-right.png);
+  padding: 0 10px;
+  background-position:right 7px;
+  background-repeat: no-repeat;
+}
+
+.menu > li {
+  display: inline-block;
+}
+
+.menu li ul {
+  left: 0;
+}
+
+.submenu {
+  width: 100px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  display: none;
+  background-color: rgb(255,100,100);
+  list-style: none;
+}
+
+.submenu li:hover {
+  background-color: #aaa;
+}
+
+.menu li li ul{
+  top: 0;
+  left: 100px;
+}
+.submenu a {
+  margin: 0;
+  padding: 0;
+}
