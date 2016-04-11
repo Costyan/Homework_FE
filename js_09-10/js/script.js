@@ -1,21 +1,25 @@
 function changeCheck(el) {
   var el = el,
-  input = el.find("input").eq(0);
-  if(!input.attr("checked")) {
-    el.css("background-position","0 -17px");
-    input.attr("checked", true)
+  input = el.find('input').eq(0);
+  if(input.attr('disabled')) return true;
+  if(!input.attr('checked')) {
+    el.css('background-position','0 -17px');
+    input.attr('checked', true)
   } else {
-    el.css("background-position","0 0");
-    input.attr("checked", false)
+    el.css('background-position','0 0');
+    input.attr('checked', false)
   }
   return true;
 }
 
 function checkStart(el) {
   var el = el,
-  input = el.find("input").eq(0);
-  if(input.attr("checked")) {
-    el.css("background-position","0 -17px");
+  input = el.find('input').eq(0);
+  if(input.attr('disabled')) {
+    el.css('background','url(img/checkbox-sprite-disabled-js.png)');
+  }
+  if(input.attr('checked')) {
+    el.css('background-position','0 -17px');
   }
   return true;
 }
