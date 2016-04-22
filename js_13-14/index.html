@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS 13-14</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/LoDash.js"></script>
+  <script src="js/QBase.js"></script>
+  <script src="js/script.js"></script>
+  <script type="text/html" id="template">
+    <div class="test-area">
+      <h1 class="title-test"><%=QBase.title%></h1>
+      <p class="title-test">(<%=QBase.description%>)</p>
+      <%for(var i = 0; i < QBase.questions.length; i++) {%>
+        <div class="question">
+          <h3><%=QBase.questions[i].text%></h3>
+          <ol>
+            <%for(var j = 0; j < QBase.questions[i].answers.length; j++) {%>
+              <li>
+                <label>
+                  <input type="checkbox" id="ansewr_<%=i%>_<%=j%>"><%=QBase.questions[i].answers[j].answer%>
+                </label>
+              </li>
+            <%}%>
+          </ol>
+        </div>
+      <%}%>
+      <div class="end-test">
+        <input type="text" id="userName" placeholder="Введите свое имя">
+        <input type="button" id="answered" value="Проверить результаты">
+      </div>
+    </div>
+  </script>
+</head>
+<body>
+</body>
+</html>

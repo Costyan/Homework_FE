@@ -1,0 +1,52 @@
+.test-area {
+  width: 960px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  box-shadow: 0 0 15px #555;
+}
+
+.title-test {
+  text-align: center;
+}
+
+.question {
+  margin: 20px 50px;
+  padding: 10px;
+  border: 1px solid #000;
+}
+
+.end-test {
+  margin: 20px auto;
+  text-align: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  width: 500px;
+  height: 154px;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -77px;
+  position: absolute;
+  background: #fff;
+  border-radius: 10px 5px;
+  box-shadow: 0 0 20px #000;
+}
+
+h3 {
+  text-align: center;
+}
+
+.modal-text {
+  margin: 10px;
+  text-indent: 5px;
+}
