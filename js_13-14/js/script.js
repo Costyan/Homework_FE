@@ -2,7 +2,7 @@
 $(function() {
   var $tmplObj = $('#template');
   var template = _.template($tmplObj.html());
-  $tmplObj.remove();
+  $tmplObj.html('').remove();
   var $body = $('body');
   var $modal = $('<div class="modal"></div>');
   var $overlay = $('<div class="overlay"></div>');
