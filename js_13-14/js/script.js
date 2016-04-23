@@ -1,6 +1,8 @@
 'use srtict;'
 $(function() {
-  var template = _.template($('#template').html());
+  var $tmplObj = $('#template');
+  var template = _.template($tmplObj.html());
+  $tmplObj.remove();
   var $body = $('body');
   var $modal = $('<div class="modal"></div>');
   var $overlay = $('<div class="overlay"></div>');

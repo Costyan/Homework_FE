@@ -5,8 +5,9 @@ $(function() {
   });
 
 /////////////////// Работа с шаблонизатором ////////////////////////////////////
-  var $template = $('#template').html();
-  console.log($template);
+  var $tmplObj = $('#template');
+  var $template = $tmplObj.html();
+  $tmplObj.html('').remove();
   var tmpl = _.template($template);
   $('.templateTest').append(tmpl(user));
 });
