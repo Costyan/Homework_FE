@@ -1,0 +1,23 @@
+* {
+  font-family: Tahoma, sans-serif;
+}
+
+a {
+  color: #3D005C;
+}
+
+.search-query {
+  width: 500px;
+}
+
+.result {
+  margin: 20px 0 20px 0;
+}
+
+.content {
+  width: 1000px;
+}
+
+.visible-url {
+  color: #006621;
+}

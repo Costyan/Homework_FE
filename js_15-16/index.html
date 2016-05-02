@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS 15-16</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="js/LoDash.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/classes.js"></script>
+  <script type="text/html" id="tmpl-search-result">
+    <%for(var i = 0; i < obj.length; i++) {%>
+    <div class="result">
+      <div>
+        <a href="<%=obj[i].url%>"><%=obj[i].title%></a>
+        <div class="visible-url">
+          <%=obj[i].visibleUrl%>
+        </div>
+      </div>
+      <div class="content">
+        <%=obj[i].content%>
+      </div>
+    </div>
+    <%}%>
+  </script>
+</head>
+<body>
+  <div class="main">
+    <div class="search">
+      <span class="title">Costyan's search</span>
+      <input class="search-query" type="text" name="">
+      <input class="search-btn" type="button" value="Отправить">
+    </div>
+    <div class="result-search">
+    </div>
+  </div>
+</body>
+</html>
