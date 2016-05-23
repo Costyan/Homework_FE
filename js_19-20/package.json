@@ -1,0 +1,15 @@
+{
+  "name": "js_19-20",
+  "version": "1.0.0",
+  "description": "Task JS 19-20",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Costyan",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  }
+}

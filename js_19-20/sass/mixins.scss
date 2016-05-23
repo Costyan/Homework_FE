@@ -1,0 +1,24 @@
+@mixin colored-layers ($height, $top, $bgc){
+  position: absolute;
+  width: 100%;
+  height: $height;
+  top: $top;
+  background-color: $bgc;
+}
+@mixin bg-img ($img, $x, $y) {
+  background: url($img) $x $y;
+}
+@mixin social-icons ($width, $height, $margin-left, $x, $y) {
+  width: $width;
+  height: $height;
+  margin-left: $margin-left;
+  @include bg-img('../img/icons.png', $x, $y);
+}
+@mixin font($font-f, $font-s) {
+  font-family: $font-f, sans-serif;
+  font-size: $font-s;
+}
+@mixin edit-link($color) {
+  text-decoration: none;
+  color: $color;
+}
