@@ -33,11 +33,7 @@ $(function() {
 
 /////////////////// Work with LoDash ///////////////////////////////////////////
   $.getJSON('https://raw.githubusercontent.com/goit-fe/markup_fe2o/master/js_19-20/data.json', function(data) {
-    var tmp = _.map(data, 'skills');
-    var skills = [];
-    for(var i = 0; i < tmp.length; i++){
-      skills = _.union(skills, tmp[i]).sort();
-    }
+    var skills = _.union(_.flattenDeep(_.map(data, 'skills'))).sort();
 
     tmp = _.map(data, 'friends');
     var numFriends = [];
