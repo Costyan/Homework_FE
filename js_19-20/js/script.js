@@ -35,22 +35,12 @@ $(function() {
   $.getJSON('https://raw.githubusercontent.com/goit-fe/markup_fe2o/master/js_19-20/data.json', function(data) {
     var skills = _.union(_.flattenDeep(_.map(data, 'skills'))).sort();
 
-    tmp = _.map(data, 'friends');
-    var numFriends = [];
-    for (var i = 0; i < tmp.length; i++) {
-      numFriends.push(tmp[i].length);
-    }
-    var names = _.map(data, 'name');
-    var result = [];
-    for(var i = 0; i < names.length; i++) {
-      result.push({name: names[i], numF: numFriends[i]})
-    }
-    var namesByFriends = _.map(_.orderBy(result,['numF'],['desc']), 'name')
+    var namesByFriends = _.map(_.sortBy(data, function (obj){return obj.friends.length;}), 'name');
 
     var friends = _.uniq(_.map(_.flattenDeep(_.map(data, 'friends')), 'name')).sort();
 
     console.log('Skills:', skills, 'Number of skills:', skills.length);
+    console.log('Names sorted by number friendsMy:', namesByFriends, 'Number of names sorted by number of friends:', namesByFriends.length);
     console.log('Friends:', friends, 'Number of friends:', friends.length);
-    console.log('Names sorted by number friends:', namesByFriends, 'Number of names sorted by number of friends:', namesByFriends.length);
   });
 });
